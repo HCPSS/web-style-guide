@@ -16,7 +16,7 @@ fractal.set('docs.path', 'docs');
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
  */
-fractal.set('plugins.web.static.path', 'public');
+fractal.set('plugins.web.static.path', 'assets');
 
 /*
  * Give your project a title.
