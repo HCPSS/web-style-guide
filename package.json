@@ -1,0 +1,8 @@
+{
+  "name": "my-fractal-project",
+  "version": "0.1.0",
+  "dependencies": {
+    "@frctl/fractal": "^0.10.7"
+  },
+  "private": true
+}

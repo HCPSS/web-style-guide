@@ -1,0 +1,15 @@
+.post__section--callout{
+	float:right;
+	width:200px;	
+	margin-bottom:2em;
+	margin-left:1em;
+	padding:.5em .5em .5em 1em;
+	border-top:#0063A4 3px solid;
+	border-bottom:#0063A4 3px solid;
+	background-color:#F1EBE7;
+		@media screen and (max-width:42.8125em) {
+			width:100%;
+			margin-left:0;
+			margin-right:0
+		}
+}
