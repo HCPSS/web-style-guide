@@ -1,6 +1,6 @@
 ---
 label: Overview
-title: Welcome to your Component Library
+title: Getting Started
 ---
 
-This is the overview page for your Component Library. It can be edited at `docs/01-index.md`.
+Use 'fractal start --sync' when running this styleguide.
