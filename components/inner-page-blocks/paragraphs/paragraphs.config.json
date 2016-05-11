@@ -1,0 +1,24 @@
+{
+    "label": "Paragraphs",
+    "status": "ready",
+    "context": {
+      "long-paragraph": "High school biology students in the Howard County Public School System (HCPSS) have made important contributions to the development of a new macroinvertebrate survey tool used extensively by environmental services and restoration professionals when monitoring stream health throughout Maryland.",
+    	"short-paragraph": "Additional information can be found here."
+    },
+    "variants": [
+    	{
+    		"name": "center",
+    		"context": {
+    			"modifier": "--center",
+    			"text": "This is a centered paragraph that floats left on smaller viewports"
+    		}
+    	},
+    	{
+    		"name": "center-no-reset",
+    		"context": {
+    			"modifier": "__no-reset--center",
+    			"text": "This is a centered paragraph that stays centered regardless of viewport"
+    		}    		
+    	}	
+    ]
+}
