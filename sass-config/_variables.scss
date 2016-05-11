@@ -1,0 +1,71 @@
+// font stacks
+
+$font-family--primary: 'Fira Sans', sans-serif;
+
+// font weights
+
+$font-weight--thin: 100;
+$font-weight--light: 200;
+$font-weight--medium: 300;
+$font-weight--bold: 400;
+$font-weight--ultra-bold: 500;
+
+// color variables
+
+$mercury: #e7e7e7;
+$wild-sand: #F2F2F2;
+$selective-yellow: #FECC6A;
+$endeavor-blue: #0063A4;
+$curious-blue: #3494D2;
+$mantis: #7DC254;
+$tutu: #FFFBFF;
+$tundora: #444444;
+$black: #000;
+$white: #FFF;
+$vermillion: #FF4100;
+$vivid-violet: #822F91;
+
+// functional color variables
+
+$color-prim: $endeavor-blue;
+$color-prim-2: $curious-blue;
+	$color-prim-2--light: lighten($color-prim-2, 25%);
+$color-sec: $mantis;
+	$color-sec--light: lighten($color-sec, 30%);
+
+$color-main-text: $tundora;
+$color-large-heading: $black;
+$color-box-shadow: $black;
+
+$color-thirds-fill: $tutu;
+$color-light-fill: $wild-sand;
+
+$color-button-callout: $selective-yellow;
+	$color-button-callout--light: lighten($selective-yellow, 10%);
+$color-light-decoration: $mercury;
+$color-dark-decoration: darken($color-light-decoration, 50%);
+$color-red-decoration: $vermillion;
+$color-purple-decoration: $vivid-violet;
+
+// borders
+
+$br-default: 1px solid;
+$br-thick: 5px solid;
+
+// font sizes
+
+$font-default: 16px;
+
+$font-x-large: em(32px);
+$font-large: em(24px);
+$font-medium: em(21px);
+$font-small: em(14px);
+$font-x-small: em(12px);
+
+// breakpoints
+
+$x-large-screen: em(950px);
+$large-screen: em(750px);
+$medium-screen: em(685px);
+$small-screen: em(527px);
+$x-small-screen: em(480px);

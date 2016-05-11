@@ -1,0 +1,52 @@
+// --------
+// Utilities
+// --------
+
+// calculate em values
+
+@function em($target, $context: $font-default) {
+	@return ($target / $context) * 1em;
+}
+
+// sets box shadows for images
+
+@mixin shadow ($offset-x, $offset-y, $blur) {
+  -moz-box-shadow: $offset-x $offset-y $blur rgba(0,0,0,.2);
+  -webkit-box-shadow: $offset-x $offset-y $blur rgba(0,0,0,.2);
+  box-shadow: $offset-x $offset-y $blur rgba(0,0,0,.2);
+  border: $br-default $color-light-decoration;
+}
+
+// sets box radius, margin and paddings for box styles that contain copy
+
+@mixin box--content ($padding, $float : null, $bg--color : null, $height : null, $margin : null, $corners : 10px) {
+    float: $float;
+    padding: $padding;
+    margin: $margin;
+    height: $height;
+    background-color: $bg--color; 
+    -moz-border-radius: $corners;
+    -webkit-border-radius: $corners;
+    border-radius: $corners;
+}
+
+@mixin step ($padding, $tile-amount, $bg--color : null, $height : null, $margin : null, $corners : 10px) {
+    display: inline-block;
+    vertical-align: middle;
+    padding: $padding;
+    height: $height;
+    width: 720px / $tile-amount;
+    background-color: $bg--color;
+    border-radius: $corners;
+}
+
+@mixin column ($width : null, $float : null) {
+  float: $float;
+  width: $width;
+}
+
+@mixin align-content($text-align : null, $margin : null) {
+      text-align: $text-align;
+      display: block;
+      margin: $margin;
+}
