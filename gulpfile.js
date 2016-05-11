@@ -1,7 +1,6 @@
 // gulp tasks
 const gulp = require('gulp'),
   minifyCSS = require('gulp-minify-css'),
-  uglify = require('gulp-uglify'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
   del = require('del'),
@@ -11,7 +10,7 @@ const gulp = require('gulp'),
 const assets = 'assets';
 
 // task variables
-var sassInput = 'components/masterkey.scss';
+var sassInput = 'masterkey.scss';
 var sassOutput = 'css';
 var sassOptions = {
   errLogToConsole: true,
@@ -45,18 +44,11 @@ gulp.task('style', () => {
 	.pipe(gulp.dest(assets));
 })
 
-gulp.task('script', () => {
-	return gulp
-	.src('js/dev.js')
-	.pipe(rename({basename: 'main', suffix: '.min'}))
-	.pipe(uglify())
-	.pipe(gulp.dest(assets));
-})
-
 gulp.task('watch', () => {
-  gulp.watch(sassInput, ['sass']);
-  gulp.watch('css/main.css', ['style']);
-  gulp.watch('js/script.js', ['script']);
+  gulp.watch(sassInput, ['sass']);  
+  gulp.watch('components/**/*.scss', ['sass']);
+  gulp.watch('sass-config/**/*.scss', ['sass']);  
+  gulp.watch('css/masterkey.css', ['style']);
 })
 
-gulp.task('default', ['delete', 'sass', 'style', 'script', 'watch'])
+gulp.task('default', ['delete', 'sass', 'style', 'watch'])
