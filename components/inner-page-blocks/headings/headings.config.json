@@ -1,0 +1,25 @@
+{
+    "label": "Headings",
+    "status": "ready",
+    "context": {
+    	"class": "",
+        "text": "This is a heading"            
+    },
+    "variants": [
+    	{
+    		"name": "center",
+    		"context": {
+    			"modifier": "--center",
+    			"text": "This is a centered heading that floats left on smaller viewports"
+    		}
+
+    	},
+    	{
+    		"name": "center-no-reset",
+    		"context": {
+    			"modifier": "__no-reset--center",
+    			"text": "This is a centered heading that stays centered regardless of viewport"
+    		}    		
+    	}
+    ]    
+}

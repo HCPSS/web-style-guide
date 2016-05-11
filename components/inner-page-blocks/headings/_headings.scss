@@ -1,0 +1,29 @@
+h1 {
+  font-size: $font-x-large;
+  color: $color-prim;
+  font-weight: bold;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  border-bottom: $br-default $color-light-decoration;
+}
+
+h2 {
+	font-size: $font-large;
+	margin-bottom: 10px;
+} 
+
+h3 {
+  font-size: $font-medium;
+  color: $color-large-heading;    
+}
+
+.heading--center {
+  @include align-content($text-align : center);
+  @media screen and (max-width: $medium-screen) {
+    @include align-content($text-align : left);
+  }
+}
+
+.heading__no-reset--center {
+  text-align: center;
+}
