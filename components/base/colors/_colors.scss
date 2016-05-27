@@ -34,13 +34,3 @@ $color-light-decoration: $mercury;
 $color-dark-decoration: darken($color-light-decoration, 50%);
 $color-red-decoration: $vermillion;
 $color-purple-decoration: $vivid-violet;
-
-// color classess
-
-.light-blue { background-color: $color-prim-2--light !important; }
-
-.light-green { background-color: $color-sec--light !important; }
-
-.light-yellow { background-color: $color-button-callout--light !important; }
-
-.dark-green { background-color: darken($color-sec, 10%) !important; }
