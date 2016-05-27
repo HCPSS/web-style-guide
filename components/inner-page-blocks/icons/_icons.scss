@@ -1,0 +1,107 @@
+.icon {
+  width: 300px;
+  float: right;
+  margin: 0px 5px 10px 15px;
+}
+
+.pdf {
+  padding-right: 5px;
+}
+
+a.pdf-icon {
+  color: darken($color-light-decoration, 30%);
+}
+
+a.pdf-icon:hover {
+  color: $color-red-decoration;
+}
+
+.filemeta {
+  color: darken($color-light-decoration, 30%);
+  font-size: $font-default - 4px;
+}
+
+.fa-3 {
+  font-size: 2em;
+}
+
+.fa-5 {
+  font-size: 4em;
+  margin-left: 30px;
+}
+
+#social-media-icon-twitter {
+  text-decoration: none;
+  color: #55ACEE;
+}
+
+#social-media-icon-facebook {
+  text-decoration: none;
+  color: #3B5998;
+}
+
+#social-media-icon-instagram {
+  text-decoration: none;
+  color: #4F5156;
+}
+
+#social-media-icon-vimeo {
+  text-decoration: none;
+  color: #4F5156;
+}
+
+#social-media-icon-youtube {
+  text-decoration: none;
+  color: #CD201F;
+}
+
+#social-media-icon-twitter:hover,
+#social-media-icon-facebook:hover,
+#social-media-icon-instagram:hover,
+#social-media-icon-vimeo:hover,
+#social-media-icon-youtube:hover {
+  color: #4F5156;
+}
+
+.infographic-numbers {
+  color: darken($color-light-decoration, 45%);
+  font-size: $font-large;
+  list-style: none;
+    & li {
+      @media screen and (max-width: $medium-screen) {  
+        display: inline;
+        font-size: 20px;
+      }
+    }
+    & em {
+      color: $color-red-decoration;
+      font-size: $font-large;
+      font-style: normal;
+      @media screen and (max-width: $medium-screen) {  
+        font-size: 20px;
+      }
+    }
+}
+
+.fa-calendar {
+  color: $color-main-text;
+}
+
+.fa-institution, .fa-users, .fa-cloud, .fa-mobile {
+  color: $color-main-text;
+}
+
+.fa-tasks {
+  color: $color-main-text;
+}
+
+@media screen and (max-width: $medium-screen) {  
+  img.logo.shadow-smaller {
+    height: 80px;
+    width: 80px; 
+  }
+  .fa-search {
+     display: none;
+  }
+}
+
