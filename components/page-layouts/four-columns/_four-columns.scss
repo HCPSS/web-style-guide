@@ -1,0 +1,35 @@
+.fourths {
+  @include column(25%, left);
+  @media screen and (max-width: $medium-screen) {
+    width: 100%;
+    border-bottom: $br-default $color-light-decoration;
+    img {
+      float: left;
+      margin-bottom: 1em;
+    }
+    & .caption {
+      float: left;
+      margin-left: 1em;
+      text-align: left;      
+    }
+  }
+}
+
+.full {
+  display: inline-table;
+  border-top: $br-default $color-light-decoration;
+  border-bottom: $br-default $color-light-decoration;
+  margin-bottom:1em;
+  height: 100%;
+}
+
+// Can be paired with .full to remove borders
+
+.no-border {
+  border-top: 0 solid $color-light-decoration;
+  border-bottom: 0 solid $color-light-decoration;
+}
+
+.long-list li {
+  list-style: none;
+}
