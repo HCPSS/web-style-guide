@@ -1,0 +1,107 @@
+.thirds {
+    @include column (33%, left);
+    & h2 {
+      border-bottom: $br-default $color-light-decoration;
+      display: inline-block;
+      font-size: $font-large - .1em;
+      margin-bottom: 0.58333em;
+      padding-top: 0.5em;
+    }
+    & img {
+      margin-left: 30px;
+    }
+    @media screen and (max-width: $medium-screen) {
+      width:100%;
+    }
+  }
+
+.thirds__breakout--tiles {
+  width: 30%;
+  @include box--content($float: left, $padding: 0.2em, $margin : 0.2em);
+  @media screen and (max-width: $medium-screen) {
+    width:100%;
+    height: 100%;
+  }
+  & img {
+    margin-left: 30px;
+    width: 85%;
+      @media screen and (max-width: $medium-screen) {
+        width:70%;
+      }      
+  }  
+}
+
+.thirds .caption, .fourths .caption {
+  text-align: center;
+}
+
+.home-infographics {
+  & .thirds {
+    @media screen and (max-width: $medium-screen) {
+      width: 100%;
+      border-bottom: 1px solid #E7E7E7;
+      img {
+        float: left;
+        margin-bottom: 1em;
+        margin-left: 0px;
+      }
+      .caption {
+        margin-top: 4em;
+        margin-left: 1em;
+        text-align: left;        
+      }
+    }
+  }
+
+}
+
+.thirds-highlight {
+   border: $br-default $color-prim-2;
+   background-color: $color-thirds-fill;
+   width: 32%;
+   padding-left: 10px;
+   float: right; 
+}
+
+.content-trending {
+  & .thirds {
+    h2 {
+      padding-top: 0;
+    }
+    @media screen and (max-width: $medium-screen) {
+      width:100%;
+    }
+  }
+  & .thirds-highlight {
+    @media screen and (max-width: $medium-screen) {
+      border-top: 2px solid $color-prim-2;
+      border-bottom: 2px solid $color-prim-2;
+      border-right: none;
+      border-left: none;
+      padding-left: none;
+      background-color: none;
+    }
+  }
+}
+
+.two-thirds {
+  width: 66%;
+  float: left;
+  @media screen and (max-width: $medium-screen) {
+    width:100%;
+  }
+}
+
+.two-thirds img.double-image {
+  width: 100%;
+  @media screen and (max-width: $medium-screen) {
+       margin-top: 1em;
+  }
+}
+
+.two-thirds .thirds {
+  width: 50%;
+  @media screen and (max-width: $medium-screen) {
+    width:100%;
+  }
+}
