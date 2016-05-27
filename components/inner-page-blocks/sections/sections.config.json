@@ -1,0 +1,5 @@
+{
+    "label": "Sections",
+    "status": "ready",
+    "notes": "Styling for callout. This can be used for quick overviews or bulleted lists of information. Should only be used with col-two class so that it floats right."
+}
