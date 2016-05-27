@@ -27,3 +27,16 @@ h3 {
 .heading__no-reset--center {
   text-align: center;
 }
+
+.section-header {
+  text-transform: uppercase;
+  color: $color-prim;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAZQTFRF5+fnAAAAf3rwuwAAAA5JREFUeNpiYKAnAAgwAABuAAEcD8SQAAAAAElFTkSuQmCC) repeat-x center center;
+  text-align: center;
+}
+
+.section-header span {
+  background-color: #fff;
+  padding-left: 1em;
+  padding-right: 1em;
+}
