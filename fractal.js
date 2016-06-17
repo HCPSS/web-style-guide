@@ -27,3 +27,5 @@ fractal.set('project.title', 'HCPSS Style Guide');
  * The default layout template to use when rendering component previews
  */
 fractal.set('components.default.preview', '@preview');
+fractal.set('components.footer.preview', '@footer-preview');
+fractal.set('components.header.preview', '@header-preview');
