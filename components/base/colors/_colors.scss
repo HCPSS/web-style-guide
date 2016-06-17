@@ -2,6 +2,8 @@
 
 $mercury: #e7e7e7;
 $wild-sand: #F2F2F2;
+$stardust: #f8f8f8;
+$pampas: #F1EBE7;
 $selective-yellow: #FECC6A;
 $endeavor-blue: #0063A4;
 $curious-blue: #3494D2;
@@ -27,6 +29,8 @@ $color-box-shadow: $black;
 
 $color-thirds-fill: $tutu;
 $color-light-fill: $wild-sand;
+$color-light-fill--brown: $pampas;
+$color-lighter-fill: $stardust;
 
 $color-button-callout: $selective-yellow;
   $color-button-callout--light: lighten($selective-yellow, 10%);

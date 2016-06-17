@@ -5,7 +5,7 @@
 // calculate em values
 
 @function em($target, $context: $font-default) {
-	@return ($target / $context) * 1em;
+  @return ($target / $context) * 1em;
 }
 
 // sets box shadows for images
@@ -20,24 +20,24 @@
 // sets box radius, margin and paddings for box styles that contain copy
 
 @mixin box--content ($padding, $float : null, $bg--color : null, $height : null, $margin : null, $corners : 10px) {
-  float: $float;
-  padding: $padding;
-  margin: $margin;
-  height: $height;
-  background-color: $bg--color; 
-  -moz-border-radius: $corners;
-  -webkit-border-radius: $corners;
-  border-radius: $corners;
+    float: $float;
+    padding: $padding;
+    margin: $margin;
+    height: $height;
+    background-color: $bg--color; 
+    -moz-border-radius: $corners;
+    -webkit-border-radius: $corners;
+    border-radius: $corners;
 }
 
 @mixin step ($padding, $tile-amount, $bg--color : null, $height : null, $margin : null, $corners : 10px) {
-  display: inline-block;
-  vertical-align: middle;
-  padding: $padding;
-  height: $height;
-  width: 720px / $tile-amount;
-  background-color: $bg--color;
-  border-radius: $corners;
+    display: inline-block;
+    vertical-align: middle;
+    padding: $padding;
+    height: $height;
+    width: 720px / $tile-amount;
+    background-color: $bg--color;
+    border-radius: $corners;
 }
 
 @mixin column ($width : null, $float : null) {
@@ -46,7 +46,7 @@
 }
 
 @mixin align-content($text-align : null, $margin : null) {
-  text-align: $text-align;
-  display: block;
-  margin: $margin;
+      text-align: $text-align;
+      display: block;
+      margin: $margin;
 }
