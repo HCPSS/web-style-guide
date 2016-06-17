@@ -9,12 +9,14 @@
     &-left {
     @include column (48%, left);
       @media screen and (max-width: $medium-screen) {
+        float: none;
         width:100%;
       } 
     }   
     &-right {
     @include column (48%, right);
       @media screen and (max-width: $medium-screen) {
+        float: none;
         width:100%;
       } 
     }

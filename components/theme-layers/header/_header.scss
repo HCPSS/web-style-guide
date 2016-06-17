@@ -1,0 +1,70 @@
+.header {
+  width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-inner {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 3px;
+  background: #FFF;
+  @media screen and (max-width: $medium-screen) {     
+    text-align: center;
+  } 
+}
+
+.logo {
+  float: left;
+  margin-right: 1em;
+    @media screen and (max-width: $medium-screen) {     
+    width: 100%;
+    float: none;
+  } 
+}
+
+.logomark {
+  width: 700px;
+  float: left;
+  @media screen and (max-width: $medium-screen) {     
+    width: 100%;
+    float: none;
+  }
+}
+
+.logomark h1 {
+  font-weight: $font-weight--medium;
+  font-size: $font-x-large - .25em;
+  margin-top: 10px;
+  max-width: 600px;
+}
+
+.logomark h1 a {
+  color: lighten($color-main-text, 5%);
+}
+
+.sm {
+  float: right;
+}
+
+.social-media-icons {
+  float: left;
+  & li {
+    display: inline;
+  }
+  @media screen and (max-width: $medium-screen) {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: $medium-screen) {    
+  .sm, .social-media-icons {
+     float: none;
+  }
+}
+
+.social-media-icons li {
+  display: inline;
+}

@@ -1,0 +1,317 @@
+// Main Site Navigation
+
+#main__navigation {
+  width: 800px;
+  background-color: $color-prim;
+  color: #fff;
+  height: 40px;
+  position: relative;
+  float: right;
+  margin-right: 70px;
+  padding-top: 5px;
+  z-index: 1;
+  @media screen and (max-width: $medium-screen) {  
+    height: initial;
+    width: 100%;
+    border-top: 5px solid $color-prim-2;
+    border-bottom: 5px solid $color-prim-2;
+    margin: 0;
+  }
+  & .thirds {
+    visibility: hidden;
+    text-align: left;
+    & li {
+      list-style-type: none;
+    }
+  }
+  & #search-form, p {
+    visibility: hidden;
+  }
+  & fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-before: 0;
+    -webkit-padding-start: 0;
+    -webkit-padding-end: 0;
+    -webkit-padding-after: 0;
+  }
+  & fieldset legend {
+    position: absolute;
+    top: -1000px;
+  }
+}
+
+#main__navigation a {
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.main__navigation--about, 
+.main__navigation--schools, 
+.main__navigation--academics, 
+.main__navigation--services, 
+.main__navigation--news,
+.main__navigation--search {
+  height: 0px;
+  /* padding-top: 20px; */
+  overflow: hidden;
+  left: 0;
+  background: $color-prim;
+  /* z-index: 4; */
+  & h2 {
+    visibility: hidden;
+    margin-left: 40px; 
+    margin-bottom: 0px;
+  }
+}
+
+.main__navigation--close {
+  float: right;
+  padding-right: 25px;
+  margin-top: -8px;
+  cursor: pointer;
+  clear: both;
+  font-size: 22px; 
+}
+
+#search-form { 
+  width: 90%;
+  float: right;
+  color: #000;
+}
+
+.main__navigation--toggle {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-right: 5px;
+  @media screen and (min-width: $medium-screen) {
+    position: relative;
+    display: initial;
+    vertical-align: top;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+}
+
+.main__navigation--tabs .about, 
+.main__navigation--tabs .schools, 
+.main__navigation--tabs .academics, 
+.main__navigation--tabs .news, 
+.main__navigation--tabs .services, 
+.main__navigation--tabs .search  { 
+    top: 4px;
+    padding-bottom: 10px;
+    padding-top: 10px;    
+  @media screen and (min-width: em(300px)) and (max-width: em(320px)) {
+      top: 0;  
+      border-radius: 10px;
+      margin-left: 15px;
+  }
+  @media screen and (min-width: em(321px)) and (max-width: em(381px)) {
+      top: 0;  
+      border-radius: 10px;
+      margin-left: 30px;
+  }
+  @media screen and (min-width: em(382px)) and (max-width: em(420px)) { 
+      top: 0;   
+      border-radius: 10px;
+      margin-left: 40px;
+  }    
+}
+
+#main__navigation .state { position: absolute; left: -10000px;}
+
+#close-about-nav:checked ~ .navigation__section .main__navigation--about,
+#close-schools-nav:checked ~ .navigation__section .main__navigation--schools,
+#close-academics-nav:checked ~ .navigation__section .main__navigation--academics, 
+#close-services-nav:checked ~ .navigation__section .main__navigation--services,
+#close-news-nav:checked ~ .navigation__section .main__navigation--news,
+#close-search-nav:checked ~ .navigation__section .main__navigation--search { transition: height 0.25s ease-in-out; }
+
+#about-navigation-toggle:checked ~ .navigation__section .main__navigation--about, 
+#schools-navigation-toggle:checked ~ .navigation__section .main__navigation--schools { 
+  background-color: $color-prim-2;
+  margin-top: 10px;
+  border-bottom: 4px solid $color-prim;
+  display: block;
+  height: 250px; 
+  width: 100%;
+  transition: height 0.35s ease-in-out;  
+  @media screen and (max-width: $medium-screen) { height: 435px; border-bottom: none; }
+}
+
+#academics-navigation-toggle:checked ~ .navigation__section .main__navigation--academics { 
+  background-color: $color-prim-2;
+  margin-top: 10px;
+  border-bottom: 4px solid $color-prim;
+  display: block;
+  height: 340px; 
+  width: 100%;
+  transition: height 0.35s ease-in-out;  
+  @media screen and (max-width: $medium-screen) { height: 630px; border-bottom: none; }
+}
+
+#services-navigation-toggle:checked ~ .navigation__section .main__navigation--services { 
+  background-color: $color-prim-2;
+  margin-top: 10px;
+  border-bottom: 4px solid $color-prim;
+  display: block;
+  height: 225px; 
+  width: 100%;
+  transition: height 0.35s ease-in-out;  
+  @media screen and (max-width: $medium-screen) { height: 330px; border-bottom: none; }
+}
+
+#news-navigation-toggle:checked ~ .navigation__section .main__navigation--news { 
+  background-color: $color-prim-2;
+  margin-top: 10px;
+  border-bottom: 4px solid $color-prim;
+  display: block;
+  height: 225px; 
+  width: 100%;
+  transition: height 0.35s ease-in-out;  
+    & #thirds__sub-box {
+      padding-top:15px;
+      @media screen and (max-width: $medium-screen) {
+        padding-top: 15px;
+        margin-left: 40px;
+        margin-right: auto;
+        width: 80%;
+       }
+    }
+  @media screen and (max-width: $medium-screen) { height: 330px; border-bottom: none; }
+}
+
+#search-navigation-toggle:checked ~ .navigation__section .main__navigation--search { 
+  background-color: $color-prim-2;
+  margin-top: 10px;
+  border-bottom: 4px solid $color-prim;
+  display: block;
+  height: 120px; 
+  width: 100%;
+  transition: height 0.35s ease-in-out;  
+  padding-top:50px;
+  @media screen and (max-width: $medium-screen) { height: 140px; border-bottom: none; }
+}
+
+#about-navigation-toggle:checked ~ .navigation__section .main__navigation--about .thirds, 
+#about-navigation-toggle:checked ~ .navigation__section .main__navigation--about h2,
+#about-navigation-toggle:checked ~ .navigation__section .main__navigation--about .closeNav--added,
+#schools-navigation-toggle:checked ~ .navigation__section .main__navigation--schools .thirds, 
+#schools-navigation-toggle:checked ~ .navigation__section .main__navigation--schools h2,
+#schools-navigation-toggle:checked ~ .navigation__section .main__navigation--schools .closeNav--added,
+#academics-navigation-toggle:checked ~ .navigation__section .main__navigation--academics .thirds, 
+#academics-navigation-toggle:checked ~ .navigation__section .main__navigation--academics h2,
+#academics-navigation-toggle:checked ~ .navigation__section .main__navigation--academics .closeNav--added,
+#services-navigation-toggle:checked ~ .navigation__section .main__navigation--services .thirds, 
+#services-navigation-toggle:checked ~ .navigation__section .main__navigation--services h2,
+#news-navigation-toggle:checked ~ .navigation__section .main__navigation--news .thirds,
+#news-navigation-toggle:checked ~ .navigation__section .main__navigation--news h2,
+#search-navigation-toggle:checked ~ .navigation__section .main__navigation--search #search-form,
+#search-navigation-toggle:checked ~ .navigation__section .main__navigation--search h2,
+#search-navigation-toggle:checked ~ .navigation__section .main__navigation--search p { visibility: visible; }
+
+#services-navigation-toggle:checked ~ .navigation__section .main__navigation--services h2 { 
+  @media screen and (max-width: $medium-screen) {display: none;} 
+}
+#news-navigation-toggle:checked ~ .navigation__section .main__navigation--news h2 { 
+  @media screen and (max-width: $medium-screen) {display: none;} 
+}
+#search-navigation-toggle:checked ~ .navigation__section .main__navigation--search h2 { 
+  @media screen and (max-width: $medium-screen) {display: none;} 
+}
+
+#about-navigation-toggle:checked ~ .main__navigation--tabs .about,
+#schools-navigation-toggle:checked ~ .main__navigation--tabs .schools,
+#academics-navigation-toggle:checked ~ .main__navigation--tabs .academics,
+#news-navigation-toggle:checked ~ .main__navigation--tabs .news,
+#services-navigation-toggle:checked ~ .main__navigation--tabs .services,
+#search-navigation-toggle:checked ~ .main__navigation--tabs .search { background-color: $color-prim-2; color:#FFF; }
+
+.closeNav--added {
+  margin-top: 10px;
+  visibility: hidden;
+  & i {
+    margin-left: 8px;
+  }
+}
+
+.sidebar {
+  width: 30%;
+  @media screen and (max-width: $medium-screen) {  
+     border-top: 3px solid $color-sec;
+  }
+}
+
+.page .sidebar {
+  float: left;
+}
+
+.widget_advanced_menu {
+  list-style: none;
+}
+
+.menu-side {
+  @media screen and (max-width: $medium-screen) {
+    padding-left: 0;
+  }
+}
+
+.widget_advanced_menu .menu-side {
+  list-style: none;
+}
+
+.widget_advanced_menu .menu-side li.menu-item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: $br-default $color-light-decoration;
+}
+
+.sidebar li.widget_ultimate_posts, .sidebar li.widget_text {
+  list-style: none;
+}
+
+.sidebar li.widget_text {
+  border-top: $br-thick $color-sec;
+  border-bottom: $br-thick $color-sec;
+}
+
+// Temporary navigation for services template
+
+.top-nav {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.top-nav ul {
+  list-style: none;
+}
+
+.top-nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+  @media screen and (max-width: $medium-screen) {  
+    display: block;
+    margin: 0.5em 0;
+  }
+}
+
+.top-nav a {
+  font-weight: $font-weight--ultra-bold;
+  padding: 0.5em;
+}

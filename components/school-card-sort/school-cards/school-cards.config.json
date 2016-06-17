@@ -1,0 +1,5 @@
+{
+    "label": "School Cards",
+    "status": "ready",
+    "notes": "In production, this page has a line in the wordpress functions.php file that disables autop to make sure that the paragraph tags and line breaks don't interfere."
+}

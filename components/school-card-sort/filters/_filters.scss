@@ -1,0 +1,193 @@
+.sch-card__filter-box {
+  top: 0;
+  width: 100%;
+  height: 210px;
+  margin-bottom: 15px;
+  position: relative;
+  background-color: #F2F2F2;
+  -moz-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  padding-top: 20px;
+    @media screen and (min-width: 685px) and (max-width: 1199px) { 
+      height: 140px;
+      width: 95.8%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1500px) { 
+      height: 140px;
+      width: 93.9%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    @media screen and (min-width: 1501px) { 
+      height: 140px;
+      width: 93.7%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  &--sch-filters {
+    width: 200px;
+    float: left;
+    padding-left: em(20px);
+    clear: both;
+    /* height: 200px; */
+      @media screen and (min-width: 685px) { 
+        width: 100%;
+      }  
+  }
+
+}
+
+#container__filter-button {
+  height: 50px;
+  float: left;
+  width: 200px;
+  position: relative;
+  clear: left;
+}
+
+#result-count {
+  float: left;
+  display: block;
+  margin-top: em(8px);
+    @media screen and (min-width: 355px) { margin-top: em(12px);}
+    @media screen and (min-width: 550px) { 
+      height: initial;
+      margin-top: 0em;
+      float: right;
+    }  
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 5px;
+  left: 10px;
+  font-size: 1.5em;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#sidebartoggler,
+#sch-card__modal--toggle { display: none; }
+
+
+#sidebartoggler:checked ~ .sch-card__categories {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+    box-shadow: -4px -5px 20px rgba(0,0,0,.2);
+}
+
+#sidebartoggler:checked ~ .sch-card__filters .toggle {
+  left: -1000px;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1199px) {
+  #sidebartoggler:checked ~ #sch-carddata {
+    width: 71%;
+    float: right;
+  }
+  #sidebartoggler:checked ~ .sch-card__filter-box { 
+    width: 68.5%;
+    float: right;
+    margin-right: 12px;   
+  }
+  #sidebartoggler:checked ~ #sch-carddata .sch-card { height: 500px;}
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  #sidebartoggler:checked ~ #sch-carddata {
+    width: 80%;
+    float: right;
+  }
+  #sidebartoggler:checked ~ .sch-card__filter-box {
+    width: 75.8%;
+    float: right;
+    margin-right: 28px;
+  }
+  #sidebartoggler:checked ~ #sch-carddata .sch-card { height: em(520px); }  
+}
+
+@media only screen and (min-width: 1401px) and (max-width: 1600px) {
+  #sidebartoggler:checked ~ #sch-carddata {
+    width: 93%;
+    float: right;
+  }
+  #sidebartoggler:checked ~ .sch-card__filter-box {
+    width: 88%;
+    float: right;
+    margin-right: 33px;    
+  }
+  #sidebartoggler:checked ~ #sch-carddata .sch-card { height: em(500px); }  
+}
+
+@media only screen and (min-width: 1600px) {
+  #sidebartoggler:checked ~ #sch-carddata {
+    width: 100%;
+  }
+  #sidebartoggler:checked ~ #sch-carddata .sch-card { height: em(500px); }  
+}
+
+@media only screen and (max-width: 700px) {
+  #sch-carddata { margin-top: 3.8em; }
+}
+
+.cardsearchinput {
+  color: $color-main-text;
+}
+
+.es-lazy, .ms-lazy, .hs-lazy, .ec-lazy, img.sch-card__modal--overlay-map-lazy { display: none; }
+
+.sch-card__categories {
+  position: fixed;
+  padding-top: 10px;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100%;
+  background: #fff;
+  z-index: 2;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform .3s,box-shadow .3s;
+  -moz-transition: -moz-transform .3s,box-shadow .3s;
+  transition: transform .3s,box-shadow .3s;
+  opacity: 0.98;
+  filter: alpha(opacity=98); /* for IE8 and below */ 
+  overflow: scroll;
+    @media screen and (min-width: 700px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    @media screen and (min-width: 1000px) {
+      width: 325px;
+    }
+  &-container-labels label {
+    @media screen and (max-width: 685px) { 
+      display: block;
+      margin-right: initial;
+    }
+  }    
+}
+
+
+.sch-card__categories section:nth-child(2) {
+  margin-top: em(50px);
+}
+
+.sch-card__categories section {
+  padding: 10px 10%;
+}

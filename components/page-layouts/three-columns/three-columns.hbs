@@ -1,28 +1,74 @@
+<p>Always use <code>.contents</code> when using columns. The <code>.contents</code> rule works the same as a row in Bootstrap by going the full width of the container and is set to <code>display:inline-table</code></p>
+
 <h2><code>.thirds</code> to separate content into three columns</h2>
 
-<div class="thirds">
-	<ul class="infographic-numbers">
-		<li><em>76</em> schools</li>
-		<li><em>54,870</em> students</li>
-		<li><em>8,136</em> staff</li>
-	</ul>
+<div class="contents">
+	<h2>Heading</h2>
+	<div class="thirds">
+		<h3>Column 1</h3>
+		<p>Nullam sit amet gravida metus, eget posuere erat. Vestibulum massa dolor, aliquam non nibh vitae.</p>
+	</div>
+	<div class="thirds">
+		<h3>Column 2</h3>
+		<p>Nullam sit amet gravida metus, eget posuere erat. Vestibulum massa dolor, aliquam non nibh vitae.</p>
+	</div>
+	<div class="thirds">
+		<h3>Column 3</h3>
+		<p>Nullam sit amet gravida metus, eget posuere erat. Vestibulum massa dolor, aliquam non nibh vitae.</p>
+	</div>		
 </div>
-
-<div class="thirds">
-	<p><img src="http://s3.amazonaws.com/hcpss.web.site/images/infographic-grad.png" width="200" height="188" alt=""></p>
-	<p class="caption">93% of all HCPSS Students graduate.</p>
-</div>
-
-<div class="thirds">
-	<p><img src="http://s3.amazonaws.com/hcpss.web.site/images/infographic-college.png" width="200" height="188" alt=""></p>
-	<p class="caption">85% of all HCPSS Students attend college after graduating.</p>
-</div>
-
-<h2><code>.two-thirds</code> with <code>.thirds</code></h2>
-<span class="filemeta">This is ideal for adding additional content that only spans one column to content that spans two columns.</span>
 
 <div class="contents">
-	<div class="two-thirds">
+	<h2>Graphics</h2>
+	<div class="thirds">
+		<ul class="infographic-numbers">
+			<li><em>76</em> schools</li>
+			<li><em>54,870</em> students</li>
+			<li><em>8,136</em> staff</li>
+		</ul>
+	</div>
+
+	<div class="thirds">
+		<p><img src="http://s3.amazonaws.com/hcpss.web.site/images/infographic-grad.png" width="200" height="188" alt=""></p>
+		<p class="caption">93% of all HCPSS Students graduate.</p>
+	</div>
+
+	<div class="thirds">
+		<p><img src="http://s3.amazonaws.com/hcpss.web.site/images/infographic-college.png" width="200" height="188" alt=""></p>
+		<p class="caption">85% of all HCPSS Students attend college after graduating.</p>
+	</div>
+</div>
+
+<h2><code>.two-thirds--last</code> with <code>.thirds</code></h2>
+<span class="filemeta">This is ideal for adding additional content that only spans one column to content that spans two columns. Using <code>.thirds</code> first inside of <code>.contents</code> and pairing it with <code>.two-thirds--last</code> allows a one column block of content to live next to a two column block of content.</span>
+
+<div class="contents">
+	<div class="thirds">
+		<p>“The laws of Nature are written in the language of mathematics.”</p>
+			<blockquote><p>—Galileo</p></blockquote>
+		<p><strong>How to Think and Reason Mathematically:</strong></p>
+			<ol>
+				<li style="margin-bottom: 8px">Make sense of problems and persevere in solving them.</li>
+				<li style="margin-bottom: 8px">Reason abstractly and quantitatively.</li>
+				<li style="margin-bottom: 8px">Construct viable arguments and critique the reasoning of others.</li>
+				<li style="margin-bottom: 8px">Model with Mathematics.</li>
+				<li style="margin-bottom: 8px">Use appropriate tools strategically.</li>
+				<li style="margin-bottom: 8px">Attend to precision.</li>
+				<li style="margin-bottom: 8px">Look for and make use of structure.</li>
+				<li style="margin-bottom: 8px">Look for and express regularity in repeated reasoning.</li>
+			</ol>
+	</div>	
+	<div class="two-thirds--last">
+		<h2>Overview</h2>
+		<p>The Howard County Public School System’s mathematics program is built upon the HCPSS Mathematics Curriculum. The mathematics standards set a rigorous definition of college and career readiness by demanding that students develop a depth of understanding and ability to apply mathematics to real-life situations, as college students and employees regularly do. In prekindergarten through grade 8 mathematics, the standards lay a solid foundation in whole numbers, addition, subtraction, multiplication, division, fractions, and decimals. Taken together, these elements support a student’s ability to learn and apply more demanding mathematics concepts and procedures in middle and high school.</p>
+	</div>	
+</div>
+
+<h2><code>.two-thirds--first</code> with <code>.thirds</code></h2>
+<span class="filemeta">The same thing can be done so the two columns comes first, but uses <code>.two-thirds--first</code> instead.</span>
+
+<div class="contents">
+	<div class="two-thirds--first">
 		<h2>Overview</h2>
 		<p>The Howard County Public School System’s mathematics program is built upon the HCPSS Mathematics Curriculum. The mathematics standards set a rigorous definition of college and career readiness by demanding that students develop a depth of understanding and ability to apply mathematics to real-life situations, as college students and employees regularly do. In prekindergarten through grade 8 mathematics, the standards lay a solid foundation in whole numbers, addition, subtraction, multiplication, division, fractions, and decimals. Taken together, these elements support a student’s ability to learn and apply more demanding mathematics concepts and procedures in middle and high school.</p>
 	</div>
@@ -40,7 +86,29 @@
 				<li style="margin-bottom: 8px">Look for and make use of structure.</li>
 				<li style="margin-bottom: 8px">Look for and express regularity in repeated reasoning.</li>
 			</ol>
-	</div>	
+	</div>
+</div>
+
+<h2><code>.thirds--first</code> used first with two other columns</h2>
+<span class="filemeta">Pattern is great for using three columns, but still needing some form of separation between the first and last columns.</span>
+
+<div class="contents">
+	<h2>Frequent Health Topics</h2>
+	<div class="thirds--first">
+	<h3>Medications</h3>
+		<p>Students can take their medications, whether prescribed or over the counter, in the health room during the school day.</p>
+		<p><a href="/health/medications/">Learn about our medication procedures and complete a form to get medications to school&nbsp;→</a></p>
+	</div>
+	<div class="thirds">
+	<h3>Allergies</h3>
+		<p>Epipens must be provided by parents for use during school hours. Additionally, parents can notify the school about food allergies and accommodations can be made.</p>
+		<p><a href="/health/allergies/">Read about our allergy procedures and fill out a form&nbsp;→</a></p>
+	</div>
+	<div class="thirds">
+	<h3>Diabetes</h3>
+		<p>If a student is diabetic there are a few extra forms to fill out and the school requires a notice from a family physician.</p>
+		<p><a href="/health/diabetes/">Find out more about how your student can manage their diabetes at school&nbsp;→</a></p>
+	</div>
 </div>
 
 <h2><code>.thirds__breakout--tiles</code></h2>

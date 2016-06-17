@@ -11,9 +11,23 @@
       margin-left: 30px;
     }
     @media screen and (max-width: $medium-screen) {
+      float: none;
       width:100%;
     }
   }
+
+.thirds--first {
+  float: left;
+  width: 30%;
+  border-right: 1px solid $color-light-decoration;
+  margin-right: 2.2em;
+  @media screen and (max-width: $medium-screen) {
+    float: none;
+    width:100%;
+    border-right: none;
+    margin-right: initial;
+  }  
+}
 
 .thirds__breakout--tiles {
   width: 30%;
@@ -90,6 +104,24 @@
   @media screen and (max-width: $medium-screen) {
     width:100%;
   }
+}
+
+.two-thirds--last {
+  float: right;
+  width: 66%;
+  @media screen and (max-width: $medium-screen) {
+    float: none;
+    width:100%;
+  }  
+}
+
+.two-thirds--first {
+  float: left;
+  width: 66%;
+  @media screen and (max-width: $medium-screen) {
+    float: none;
+    width:100%;
+  }  
 }
 
 .two-thirds img.double-image {
