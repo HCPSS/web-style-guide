@@ -1,5 +1,8 @@
+.main p {
+  color: $color-main-text;	
+}
+
 p {
-  color: $color-main-text;
   line-height: 24px;
   margin-right: 35px;
 	  &.tagline {
@@ -32,7 +35,7 @@ a {
 	padding:.5em .5em .5em 1em;
 	border-top:#0063A4 3px solid;
 	border-bottom:#0063A4 3px solid;
-	background-color:#F1EBE7;
+	background-color:$color-light-fill--brown;
 		@media screen and (max-width:42.8125em) {
 			width:100%;
 			margin-left:0;
