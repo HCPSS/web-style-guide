@@ -24,6 +24,17 @@
   font-size: 0.8em;
 }
 
+.btn__small--light {
+  @extend .btn__small;
+  background-color: #FFF;
+  color: $color-main-text;
+  border: 0.5px solid #F9F9F9;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.05);  
+    &:hover {
+      color:$color-main-text;
+    }
+}
+
 .btn__large {
   @extend .btn;
   width: 90%;
