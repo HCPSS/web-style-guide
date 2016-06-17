@@ -4,9 +4,26 @@
   @media only screen and (max-width: 685px) { width: 100%; }
 }
 
+.body-content {
+  float: right;
+  width: 65%;
+  @media screen and (max-width: $medium-screen) {
+    float: none;
+    width: 100%;
+  }
+}
+
 .main {
   font-size: $font-default;
   color: $color-main-text;
   margin-left: 1.5em;
   margin-right: 1.5em;
+}
+
+.group:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }
