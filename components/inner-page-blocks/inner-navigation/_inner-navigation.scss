@@ -1,0 +1,100 @@
+.sidebar {
+  width: 30%;
+  @media screen and (max-width: $medium-screen) {  
+     border-top: 3px solid $color-sec;
+     width: 100%;
+  }
+}
+
+.page .sidebar {
+  float: left;
+}
+
+.sidebar li#sticky-posts-7 {
+  border-top: $br-thick $color-sec;
+  margin-top: 2em;
+  @media screen and (max-width: $medium-screen) {  
+    border-top: none;
+    margin-top: auto;
+  }
+}
+
+.sidebar li#sticky-posts-6 {
+  border-bottom: $br-thick $color-sec;
+  @media screen and (max-width: $medium-screen) {  
+    border-bottom: none;
+  }
+}
+
+.sidebar li.widget_ultimate_posts, 
+.sidebar li.widget_text, 
+.sidebar li.widget_hcpss_events_upcoming_events {
+   list-style: none;
+ }
+
+.sidebar li.widget_hcpss_events_upcoming_events {
+  border-top: 5px solid #7DC254;
+  margin-top: 2em;
+}
+
+.sidebar li.widget_hcpss_events_upcoming_events h4{
+    margin: 0
+}
+
+.sidebar li.widget_hcpss_events_upcoming_events .post{
+    margin: 20px 0;
+}
+
+@media screen and (max-width: $medium-screen) {  
+   .sidebar li.widget_text {
+   border-top: 3px solid $color-sec;
+   border-bottom: 3px solid $color-sec;
+ }
+}
+
+.widget_advanced_menu {
+  list-style: none;
+}
+
+.menu-side {
+  @media screen and (max-width: $medium-screen) {
+    padding-left: 0;
+  }
+}
+
+.widget_advanced_menu .menu-side {
+  list-style: none;
+}
+
+.widget_advanced_menu .menu-side li.menu-item {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: $br-default $color-light-decoration;
+}
+
+.sidebar li.widget_ultimate_posts, .sidebar li.widget_text {
+  list-style: none;
+}
+
+.sidebar li.widget_text {
+  border-top: $br-thick $color-sec;
+  border-bottom: $br-thick $color-sec;
+}
+
+.top-nav {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.top-nav ul {
+  list-style: none;
+}
+
+.top-nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+  @media screen and (max-width: $medium-screen) {  
+    display: block;
+    margin: 0.5em 0;
+  }
+}
