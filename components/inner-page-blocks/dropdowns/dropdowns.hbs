@@ -1,0 +1,27 @@
+<h2>Dropdowns for longer blocks of content</h2>
+<span class="filemeta">Use the following pattern to group questions that are longer blocks of content with an associated heading into a set of dropdowns. The group of headings that need to turn into dropdowns should be under <code>&lt;div id="list"&gt;</code>, followed by headings (<code>h3</code>, <code>h2</code>) with a single child paragraph <code>&lt;p class="hide"&gt;</code></span>
+
+<h2>Heading to single paragraph</h2>
+<div id="list">
+	<h3><i class="fa fa-2 fa-angle-right"></i> The bus drives past my house. Why can’t it just stop at my house? </h3>
+		<p class="hide">Bus stops are placed to allow the buses easy access and egress through neighborhoods while keeping safety a priority. Adding bus stops can cause further delays on bus routes and extend the students’ ride time. Bus routes would have to start earlier in the morning and in the afternoon would cause students to arrive home later.</p>
+	<h3><i class="fa fa-2 fa-angle-right"></i> How is a bus stop established?</h3>
+		<p class="hide">Bus stops are established based upon several factors, which include walking conditions, walking distance to the stop and road accessibility. Given acceptable walking conditions, bus stops are placed a minimum of one-quarter mile apart. Students may be required to walk up to .4 miles. </p>
+</div>
+
+<h2>Heading to multiple paragraphs</h2>
+<span class="filemeta">Same markup structure as single paragraphs, except the multiple paragraphs should be wrapped in <code>&lt;div class="hide hide--content"&gt;</code>. <code>.hide--content</code> is a fix that gets rid of an extra bit of margin. This margin had caused the content to stagger when the dropdown event was triggered.</span>
+<div id="list">
+	<h3><i class="fa fa-2 fa-angle-right"></i> This is a heading with multiple paragraphs under it</h3>
+		<div class="hide hide--content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>			
+		</div>
+	<h3><i class="fa fa-2 fa-angle-right"></i> This is a heading with multiple paragraphs under it</h3>
+		<div class="hide hide--content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue dapibus purus, quis rutrum tortor euismod ac. Duis velit metus, fringilla ac finibus ac, tincidunt nec est. Maecenas fringilla posuere nunc quis dapibus. Vivamus faucibus quam vel congue suscipit. Vestibulum rutrum libero in diam feugiat, consequat finibus lectus aliquet. Nulla ac auctor tellus, pulvinar imperdiet nunc.</p>			
+		</div>
+</div>
