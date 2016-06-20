@@ -32,7 +32,7 @@
   }
 }
 
-.step--full {
+.timeline__step--full {
   @include box--content($padding: 0.6em, $bg--color: #e7e7e7);
   max-width:100%;
   position:relative;
