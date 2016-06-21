@@ -4,13 +4,15 @@
 
 - Copy down this repository
 
-If you haven't already installed the Fractal CLI helper on your machine, do that first from the root of the project:
+If you haven't already installed the Fractal CLI helper on your machine, do that first:
 
 ```shell
 npm i @frctl/fractal -g
 ```
 
 - Use `npm install` to download all dependencies for the project. This may take a while.
+
+You'll only have to do the npm install once.
 
 Then:
 
