@@ -4,7 +4,7 @@
 
 - Copy down this repository
 
-If you haven't already installed the Fractal CLI helper on your machine, do that first:
+If you haven't already installed the Fractal CLI helper on your machine, do that first from the root of the project:
 
 ```shell
 npm i @frctl/fractal -g
